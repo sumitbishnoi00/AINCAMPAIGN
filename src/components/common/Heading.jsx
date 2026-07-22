@@ -2,7 +2,7 @@ import React from 'react'
 
 const Heading = ({heading, vari}) => {
     const variants = {
-        pri: "leading-[116.92%] ",
+        pri: "leading-[117.92%] ",
         sec: "leading-[115.38%] ",
         
         

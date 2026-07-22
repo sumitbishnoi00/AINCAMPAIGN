@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="bg-white relative pt-17.75  px-4">
-      <div className=" herobg absolute top-0 right-0 w-319.5 h-287.75 "></div>
+      <div className=" herobg absolute top-0 right-0 xl:w-319.5 xl:h-287.75 h-auto w-270 "></div>
       <div className="max-w-348 w-full mx-auto flex flex-row items-center justify-between z-10 relative ">
         <a href="#">
           <Image
@@ -19,7 +19,7 @@ const Hero = () => {
           <h3 className="text-light-black thicccboi-600 text-[14px] leading-[115%] ">
             Login or Register
           </h3>
-          <button className="text-white bg-dark-blue hover:text-dark-blue hover:bg-white duration-300 transition-all text-[14px] py-3 thicccboi-600 leading-[100%] px-5.25 rounded-[60px] cursor-pointer ">
+          <button className="text-white bg-dark-blue hover:text-dark-blue hover:bg-white duration-300 transition-all text-[14px] py-3 thicccboi-600 leading-[115%] px-5.25 rounded-[60px] cursor-pointer ">
             Start Free Trial
           </button>
         </div>
