@@ -12,13 +12,13 @@ const Page = () => {
   return (
     <>
         <Hero />
-        <Dashboards />
+        {/* <Dashboards />
         <Marketing />
         <Campaign />
         <Sales />
         <Privacy />
         <Swiper />
-        <Scale />
+        <Scale /> */}
     </>
   )
 }
