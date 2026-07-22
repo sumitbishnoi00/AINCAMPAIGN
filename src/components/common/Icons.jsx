@@ -2,11 +2,23 @@ import React from "react";
 import { jsx } from "react/jsx-runtime";
 
 const Icon = ({ icon, className, pathName }) => {
-  const icons = {
-    
-  };
+    const icons = {
+        check: (
+            <svg className={className} width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2437_493)">
+                    <path className={pathName} d="M12.0001 21.5999L6.40011 15.9999L4.53345 17.8666L12.0001 25.3332L28.0001 9.33322L26.1334 7.46655L12.0001 21.5999Z" fill="#3B5998" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_2437_493">
+                        <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
 
-  return icons[icon];
+        ),
+    };
+
+    return icons[icon];
 };
 
 export default Icon;
