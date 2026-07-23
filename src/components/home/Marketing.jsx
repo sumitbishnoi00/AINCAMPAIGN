@@ -10,19 +10,20 @@ const Marketing = () => {
   const [activeTab, setActiveTab] = useState("spending");
   const [data, setData] = useState(SPENDING_DATA);
   return (
-    <section className='px-4 mt-27.5'>
+    <section className=' relative px-4 mt-27.5'>
+      <Image src={"/assets/images/webg/arrow-down.webp"} width={85} height={86.3} alt='arrow-down' className='absolute w-21.25 h-[86.3px] -bottom-10 right-132 -z-20' />
       <div className='max-w-360 w-full mx-auto flex flex-col items-center justify-center' >
         <div className='max-w-197.5 w-full mb-4.5'>
           <Heading heading={"Marketing analytics that REALLY matter"} vari={"sec"} /> 
         </div>
 
         <div className=' relative'>
-          <Image src={"/assets/images/webg/marketing.webp"} width={988} height={794} alt='marketing' />
-          <Image src={"/assets/images/webg/purchase.webp"} width={244.8} height={276} alt='purchase' className=' absolute z-10 top-7 right-8' />
-          <Image src={"/assets/images/webg/world-map.webp"} width={673.49} height={362} alt='world-map' />
+          <Image src={"/assets/images/webg/marketing2.png"} width={988} height={794} alt='marketing' className='w-247 h-198.5 shadow-[0px_10px_15px_0px_#00000026] rounded-2xl' />
+          <Image src={"/assets/images/webg/purchase.png"} width={244.8} height={276} alt='purchase' className='w-[244.8px] h-69 absolute z-10 top-41.5 -right-10 shadow-[4px_15px_35px_0px_#0000001A]' />
+          <Image src={"/assets/images/webg/world-map.png"} width={673.49} height={362} alt='world-map' className='w-[673.49px] h-90.5 absolute z-10 -bottom-4 left-18 shadow-[5px_10px_50px_0px_#0000001A]' />
         </div>
 
-        <div className='flex flex-wrap items-center justify-center mt-8.25 gap-4.75'>
+        <div className='flex flex-wrap items-center justify-center mt-17 gap-4.75'>
           <button onClick={() => { setActiveTab("spending"); setData(SPENDING_DATA); }} className={` border flex items-center justify-center transition-all duration-500 cursor-pointer ${activeTab === "spending" ? "w-40.25 h-15.5 rounded-[60px] bg-dark-moderate-blue thicccboi-700 text-[22px] leading-[100%] text-white" : "w-35.25 h-13.25 rounded-[50px] bg-ivory-white thicccboi-500 text-[20px] leading-[110%] text-ship-cove border-light-gray"}`}>
             Spending
           </button>
@@ -46,7 +47,7 @@ const Marketing = () => {
 
               <div key={index} className='flex items-start gap-5 mb-3.75'>
                 <Icon icon={"check"} className="w-8 h-8 shrink-0 flex-none" />
-                <p className='font-medium text-[18px] leading-[155.56%] text-deep-navy'>
+                <p className='thicccboi-500 text-[18px] leading-[155.56%] text-deep-navy'>
                   {item}
                 </p>
               </div>
