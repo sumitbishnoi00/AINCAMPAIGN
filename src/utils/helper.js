@@ -1,3 +1,5 @@
+import { createExhaustiveParamsProxy } from "next/dist/server/app-render/instant-validation/instant-samples";
+
 export const CRM_DATA = [
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ",
@@ -69,56 +71,128 @@ export const CAMPAIGNS_DATA = [
 
 export const BUSINESSES_DATA = [
 
-    {
-        id: 1,
-        company: "Next Technologies",
-        logo: "/assets/images/webg/nexttech.png",
-        description:
-            "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” ",
-        user: "James",
-        role: "Co-Founder at Slash next technologies.",
-        avatar: "/assets/images/webg/james.webp",
-    },
-    {
-        id: 2,
-        company: "CodeSync Inc.",
-        logo: "/assets/images/webg/codesync.png",
-        description:
-            "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”  ",
-        user: "Kathie",
-        role: "Director and Founder at CodeSync Inc.",
-        avatar: "/assets/images/webg/kathie.webp",
-    },
-    {
-        id: 3,
-        company: "Urawarrior",
-        logo: "/assets/images/webg/urawarrior.png",
-        description:
-            "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”  ",
-        user: "Bershan Shaw",
-        role: "Founder at Urawarrior",
-        avatar: "/assets/images/webg/bershan.webp",
-    },
-    {
-        id: 1,
-        company: "Next Technologies",
-        logo: "/assets/images/webg/nexttech.png",
-        description:
-            "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” ",
-        user: "James",
-        role: "Co-Founder at Slash next technologies.",
-        avatar: "/assets/images/webg/james.webp",
-    },
-    {
-        id: 2,
-        company: "CodeSync Inc.",
-        logo: "/assets/images/webg/codesync.png",
-        description:
-            "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”  ",
-        user: "Kathie",
-        role: "Director and Founder at CodeSync Inc.",
-        avatar: "/assets/images/webg/kathie.webp",
-    },
+  {
+    id: 1,
+    company: "Next Technologies",
+    logo: "/assets/images/webg/nexttech.png",
+    description:
+      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” ",
+    user: "James",
+    role: "Co-Founder at Slash next technologies.",
+    avatar: "/assets/images/webg/james.webp",
+  },
+  {
+    id: 2,
+    company: "CodeSync Inc.",
+    logo: "/assets/images/webg/codesync.png",
+    description:
+      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”  ",
+    user: "Kathie",
+    role: "Director and Founder at CodeSync Inc.",
+    avatar: "/assets/images/webg/kathie.webp",
+  },
+  {
+    id: 3,
+    company: "Urawarrior",
+    logo: "/assets/images/webg/urawarrior.png",
+    description:
+      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”  ",
+    user: "Bershan Shaw",
+    role: "Founder at Urawarrior",
+    avatar: "/assets/images/webg/bershan.webp",
+  },
+  {
+    id: 1,
+    company: "Next Technologies",
+    logo: "/assets/images/webg/nexttech.png",
+    description:
+      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.” ",
+    user: "James",
+    role: "Co-Founder at Slash next technologies.",
+    avatar: "/assets/images/webg/james.webp",
+  },
+  {
+    id: 2,
+    company: "CodeSync Inc.",
+    logo: "/assets/images/webg/codesync.png",
+    description:
+      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”  ",
+    user: "Kathie",
+    role: "Director and Founder at CodeSync Inc.",
+    avatar: "/assets/images/webg/kathie.webp",
+  },
 
+];
+
+
+
+export const LOGOS_DATA = [
+
+  {
+    src: "/assets/images/webg/noguchi.webp",
+    imgWidth: 134.73,
+    imgHeight: 51.68,
+  },
+  {
+    src: "/assets/images/webg/airbnb.webp",
+    imgWidth: 134.73,
+    imgHeight: 51.68,
+  },
+  {
+    src: "/assets/images/webg/probusiness.webp",
+    imgWidth: 175.34,
+    imgHeight: 51.68,
+  },
+  {
+    src: "/assets/images/webg/ariba.webp",
+    imgWidth: 68.3,
+    imgHeight: 50,
+  },
+  {
+    src: "/assets/images/webg/idesign.webp",
+    imgWidth: 134.73,
+    imgHeight: 51.68,
+  },
+  {
+    src: "/assets/images/webg/brooks.webp",
+    imgWidth: 134.73,
+    imgHeight: 51.68,
+  },
+  {
+    src: "/assets/images/webg/okuma.webp",
+    imgWidth: 154.57,
+    imgHeight: 51.68,
+  },
+  {
+    src: "/assets/images/webg/island.webp",
+    imgWidth: 68.3,
+    imgHeight: 50,
+  },
+
+];
+
+
+export const MARQUEE_LOGOS = Array.from({ length: 5 }).flatMap(
+  () => LOGOS_DATA
+);
+
+
+export const FOOTER_LINKS = [
+    {
+        title: "company",
+        links: [
+            "Home",
+            "About us",
+            "Pricing",
+            "Start free trial",
+        ],
+    },
+    {
+        title: "Support",
+        links: [
+            "Contact us",
+            "FAQs",
+        ],
+    },
 ];
 

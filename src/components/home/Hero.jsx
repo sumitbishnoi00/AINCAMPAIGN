@@ -42,11 +42,11 @@ const Hero = () => {
       </div>
     
         <Image
-          src={"/assets/images/webg/hero.webp"}
+          src={"/assets/images/webg/hero3.png"}
           width={1485}
           height={800}
           alt="marketing-fig"
-          className="mx-auto z-10 relative xl:mt-28 lg:mt-23 md:mt-19 sm:mt-14 mt-10 shadow-[0px_10px_15px_0px_#00000026]"
+          className="mx-auto z-10 relative xl:mt-28 lg:mt-23 md:mt-19 sm:mt-14 mt-10 "
         />
       
     </section>

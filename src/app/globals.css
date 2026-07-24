@@ -7,6 +7,10 @@
   --color-ship-cove: #7D889E;
   --color-light-gray: #D9D9D9;
   --color-midnight-blue: #040310;
+
+  --color-deep-navy: #14142B;
+  --color-midnight-blue: #040310;
+
   --color-dark-blue: #3B5998;
   --color-light-black: #0A0A0D;
   --color-light-lavender: #E1E1FF;
@@ -19,6 +23,10 @@
   --color-deep-navy: #14142B;
   --color-royal-blue: #385591;
   --color-silver-gray: #DAD7D7;
+
+  --color-smoky-gray: #464548;
+  --color-jet-gray: #47474A;
+  --color-soft-gray: #EEEDEC;
 }
 
 .herobg {
@@ -51,6 +59,7 @@
 
 }
 
+
 .thicccboi-400 {
   font-family: 'thicccboi-400', sans-serif;
 }
@@ -71,7 +80,6 @@
 }
 
 
-
 .swiper-pagination {
   margin-top: 52px !important;
   position: relative !important;
@@ -83,22 +91,51 @@
   background: #FAF9F6 !important;
   opacity: 1;
   margin: 0 7.5px !important;
- 
+
 }
 
 .swiper-pagination-bullet-active {
   border-radius: 48px !important;
   background: #3B5998 !important;
 }
+
 @media (max-width:768px) {
   .swiper-pagination {
-  margin-top: 40px !important;
+    margin-top: 40px !important;
   }
-  
+
 }
+
 @media (max-width:640px) {
   .swiper-pagination {
-  margin-top: 30px !important;
+    margin-top: 30px !important;
   }
-  
+
+}
+
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  flex-shrink: 0;
+  min-width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }

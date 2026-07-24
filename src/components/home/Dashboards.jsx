@@ -1,21 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
-import Heading from "../common/Heading";
-import {
-  ANALYTICS_DATA,
-  CRM_DATA,
-  MARKETING_DATA,
-  SECURITY_DATA,
-} from "@/utils/helper";
-import Icon from "../common/Icons";
-import Image from "next/image";
+import React, { useState } from 'react'
+import Heading from '../common/Heading'
+import { ANALYTICS_DATA, CRM_DATA, MARKETING_DATA, SECURITY_DATA } from '@/utils/helper';
+import Icon from '../common/Icons';
+import Image from 'next/image';
+
 
 const Dashboards = () => {
   const [activeTab, setActiveTab] = useState("crm");
   const [data, setData] = useState(CRM_DATA);
   return (
-    <section className=" relative px-4 xl:pt-28.5 lg:pt-22 md:pt-18 sm:pt-14 pt-10">
+    <section className=" relative px-4 xl:mt-28.5 lg:mt-22 md:mt-18 sm:mt-14 mt-10">
       <Image
         src={"/assets/images/webg/arrow-up.webp"}
         width={85}
@@ -48,6 +44,7 @@ const Dashboards = () => {
             }}
             className={` border flex items-center justify-center xl:mr-4 transition-all duration-500 cursor-pointer ${activeTab === "crm" ? "lg:w-60.25 md:w-50 sm:w-45 w-40 lg:h-15.5 md:h-12 sm:h-11  h-9 lg:text-[22px] md:text-[20px] sm:text-[18px] text-[16px] rounded-[60px] bg-dark-moderate-blue thicccboi-700  leading-[100%] text-white" : "lg:w-60.25 md:w-50 sm:w-45 w-35  lg:h-13.25 md:h-11 sm:h-9 h-8 lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]  rounded-[50px] bg-ivory-white thicccboi-500  leading-[110%] text-ship-cove border-light-gray"}`}
           >
+
             CRM Integrations
           </button>
           <button

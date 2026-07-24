@@ -19,9 +19,11 @@ const Marketing = () => {
 
         <div className=' relative'>
 
+
           <Image src={"/assets/images/webg/marketing2.png"} width={988} height={794} alt='marketing' className='md:w-247 md:h-198.5  w-full h-auto shadow-[0px_10px_15px_0px_#00000026] rounded-2xl ' />
           <Image src={"/assets/images/webg/purchase.png"} width={244.8} height={276} alt='purchase' className='lg:w-[244.8px] md:w-50 lg:h-69 md:h-60 absolute z-10 top-41.5 max-md:hidden lg:-right-10 right-0 shadow-[4px_15px_35px_0px_#0000001A] ' />
           <Image src={"/assets/images/webg/world-map.png"} width={673.49} height={362} alt='world-map' className='w-[673.49px] h-90.5 absolute z-10 -bottom-4 left-18 max-md:hidden shadow-[5px_10px_50px_0px_#0000001A] ' />
+
 
         </div>
 
