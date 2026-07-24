@@ -6,6 +6,7 @@ import Icon from '../common/Icons';
 import Image from 'next/image';
 
 
+
 const Dashboards = () => {
   const [activeTab, setActiveTab] = useState("crm");
   const [data, setData] = useState(CRM_DATA);
@@ -18,6 +19,7 @@ const Dashboards = () => {
 
         <div className='flex flex-wrap items-center justify-center mt-8.25'>
           <button onClick={() => { setActiveTab("crm"); setData(CRM_DATA); }} className={` border flex items-center justify-center mr-4 transition-all duration-500 cursor-pointer ${activeTab === "crm" ? "w-60.25 h-15.5 rounded-[60px] bg-dark-moderate-blue thicccboi-700 text-[22px] leading-[100%] text-white" : "w-60.25 h-13.25 rounded-[50px] bg-ivory-white thicccboi-500 text-[20px] leading-[110%] text-ship-cove border-light-gray"}`}>
+
             CRM Integrations
           </button>
           <button onClick={() => { setActiveTab("marketing"); setData(MARKETING_DATA); }} className={` border flex items-center justify-center mr-6.25 transition-all duration-500 cursor-pointer ${activeTab === "marketing" ? "w-100 h-15.5 rounded-[60px] bg-dark-moderate-blue thicccboi-700 text-[22px] leading-[100%] text-white" : "w-84.25 h-13.25 rounded-[50px] bg-ivory-white thicccboi-500 text-[20px] leading-[110%] text-ship-cove border-light-gray"}`}>
