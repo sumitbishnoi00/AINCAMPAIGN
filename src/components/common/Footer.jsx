@@ -58,40 +58,42 @@ const Footer = () => {
 
     <section className="px-4 bg-ivory-white lg:pt-[91.03px] md:pt-18 sm:pt-14 pt-10">
       <div className="max-w-[1600px] w-full mx-auto overflow-hidden flex flex-col items-center justify-center">
-        <div className="flex w-max marquee">
-          <div className="marquee-track">
-            {MARQUEE_LOGOS.map((item, index) => (
-              <div
-                key={`first-${index}`}
-                className="flex items-center justify-center px-10 shrink-0"
-              >
-                <a href="#">
+        <div className="max-w-[1355.45px] w-full flex items-center justify-center">
+          <div className="flex w-max marquee cursor-pointer">
+            <div className="marquee-track">
+              {MARQUEE_LOGOS.map((item, index) => (
+                <div
+                  key={`first-${index}`}
+                  className="flex items-center justify-center px-10 shrink-0"
+                >
+                  <a href="#">
+                    <Image
+                      src={item.src}
+                      width={item.imgWidth}
+                      height={item.imgHeight}
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+              ))}
+            </div>
+
+            <div className="marquee-track">
+              {MARQUEE_LOGOS.map((item, index) => (
+                <div
+                  key={`second-${index}`}
+                  className="flex items-center justify-center px-10 shrink-0"
+                >
                   <Image
                     src={item.src}
                     width={item.imgWidth}
                     height={item.imgHeight}
                     alt="logo"
                   />
-                </a>
-              </div>
-            ))}
-          </div>
+                </div>
+              ))}
 
-          <div className="marquee-track">
-            {MARQUEE_LOGOS.map((item, index) => (
-              <div
-                key={`second-${index}`}
-                className="flex items-center justify-center px-10 shrink-0"
-              >
-                <Image
-                  src={item.src}
-                  width={item.imgWidth}
-                  height={item.imgHeight}
-                  alt="logo"
-                />
-              </div>
-            ))}
-
+            </div>
           </div>
         </div>
 
@@ -193,7 +195,7 @@ const Footer = () => {
           <div className="flex flex-row  md:gap-5 gap-3">
             <div className="w-12 h-12  hover:scale-110 cursor-pointer duration-500 transition-all">
               <a href="facebook.com" target="_blank">
-                 <Icon icon={"facebook"} />
+                <Icon icon={"facebook"} />
               </a>
             </div>
             <div className="w-12 h-12  hover:scale-110 cursor-pointer duration-500 transition-all">
