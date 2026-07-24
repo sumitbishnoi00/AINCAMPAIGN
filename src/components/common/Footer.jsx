@@ -62,25 +62,27 @@ const Footer = () => {
   return (
     <section className='px-4 bg-ivory-white pt-[91.03px]'>
       <div className='max-w-[1600px] w-full mx-auto overflow-hidden flex flex-col items-center justify-center'>
-        <div className='flex w-max marquee'>
-          <div className='marquee-track'>
-            {MARQUEE_LOGOS.map((item, index) => (
+        <div className="max-w-[1355.45px] w-full flex items-center justify-center">
+          <div className='flex w-max marquee cursor-pointer'>
+            <div className='marquee-track'>
+              {MARQUEE_LOGOS.map((item, index) => (
 
-              <div key={`first-${index}`} className='flex items-center justify-center px-10 shrink-0'>
-                <a href="#">
+                <div key={`first-${index}`} className='flex items-center justify-center px-10 shrink-0'>
+                  <a href="#">
+                    <Image src={item.src} width={item.imgWidth} height={item.imgHeight} alt='logo' />
+                  </a>
+                </div>
+              ))}
+            </div>
+
+            <div className='marquee-track'>
+              {MARQUEE_LOGOS.map((item, index) => (
+
+                <div key={`second-${index}`} className='flex items-center justify-center px-10 shrink-0'>
                   <Image src={item.src} width={item.imgWidth} height={item.imgHeight} alt='logo' />
-                </a>
-              </div>
-            ))}
-          </div>
-
-          <div className='marquee-track'>
-            {MARQUEE_LOGOS.map((item, index) => (
-
-              <div key={`second-${index}`} className='flex items-center justify-center px-10 shrink-0'>
-                <Image src={item.src} width={item.imgWidth} height={item.imgHeight} alt='logo' />
-              </div>
-            ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -133,23 +135,23 @@ const Footer = () => {
         <div className='w-full border border-dashed border-dark-blue mt-15.75 mb-10.25'></div>
 
         <div className="w-full flex items-center justify-between mb-13.75">
-              <ul className="flex items-center justify-center gap-2 thicccboi-300 text-[14px] leading-[157.14%] text-smoky-gray">
-                <li>
-                  <Link href={"/privacy-policy"} className=" transition-all duration-500 hover:text-black" > Privacy Policy </Link>
-                </li>
-                <li>
-                  •
-                </li>
+          <ul className="flex items-center justify-center gap-2 thicccboi-300 text-[14px] leading-[157.14%] text-smoky-gray">
+            <li>
+              <Link href={"/privacy-policy"} className=" transition-all duration-500 hover:text-black" > Privacy Policy </Link>
+            </li>
+            <li>
+              •
+            </li>
 
-                <li>
-                  <Link href={"/terms-and-conditions"} className=" transition-all duration-500 hover:text-black" >Terms & Conditions</Link>
-                </li>
+            <li>
+              <Link href={"/terms-and-conditions"} className=" transition-all duration-500 hover:text-black" >Terms & Conditions</Link>
+            </li>
 
-              </ul>
+          </ul>
 
-              <div className="">
+          <div className="">
 
-              </div>
+          </div>
         </div>
       </div>
     </section>

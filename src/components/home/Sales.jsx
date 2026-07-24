@@ -45,7 +45,7 @@ const Sales = () => {
           </div>
         </div>
 
-        <div className="xl:mt-6 mt-2">
+        <div className="xl:mt-6 sm:mt-4 mt-3 ">
           <Image
             src={"/assets/images/webg/sells.webp"}
             width={855}
