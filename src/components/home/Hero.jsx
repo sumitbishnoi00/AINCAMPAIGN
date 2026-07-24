@@ -16,10 +16,10 @@ const Hero = () => {
           />
         </a>
         <div className="flex flex-row items-center lg:gap-12.5 md:gap-9 sm:gap-5 gap-2">
-          <h3 className="text-light-black thicccboi-600 md:text-[14px] sm:text-[12px] text-[10px]  leading-[115%] ">
+          <h3 className="text-light-black cursor-pointer thicccboi-600 md:text-[14px] sm:text-[12px] text-[10px]  leading-[115%] ">
             Login or Register
           </h3>
-          <button className="text-white bg-dark-blue hover:text-dark-blue hover:bg-white duration-300 transition-all md:text-[14px] sm:text-[12px] text-[10px]  thicccboi-600 sm:leading-[143%] leading-[122%]  md:px-5.25 sm:px-4 px-3 md:py-2.5 sm:py-2 py-1.5  rounded-[60px] cursor-pointer ">
+          <button className="text-white  bg-dark-blue hover:text-dark-blue hover:bg-white duration-400 transition-all md:text-[14px] sm:text-[12px] text-[10px]  thicccboi-600 sm:leading-[143%] leading-[122%]  md:px-5.25 sm:px-4 px-3 md:py-2.5 sm:py-2 py-1.5  rounded-[60px] cursor-pointer ">
             Start Free Trial
           </button>
         </div>
@@ -46,7 +46,7 @@ const Hero = () => {
           width={1485}
           height={800}
           alt="marketing-fig"
-          className="mx-auto z-10 relative xl:mt-28 lg:mt-23 md:mt-19 sm:mt-14 mt-10"
+          className="mx-auto z-10 relative xl:mt-28 lg:mt-23 md:mt-19 sm:mt-14 mt-10 shadow-[0px_10px_15px_0px_#00000026]"
         />
       
     </section>

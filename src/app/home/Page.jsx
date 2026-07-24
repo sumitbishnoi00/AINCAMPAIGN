@@ -5,7 +5,7 @@ import Marketing from '@/components/home/Marketing'
 import Privacy from '@/components/home/Privacy'
 import Sales from '@/components/home/Sales'
 import Scale from '@/components/home/Scale'
-import Swiper from '@/components/home/Swiper'
+import TestimonialSwiper from '@/components/home/TestimonialSwiper'
 import React from 'react'
 
 const Page = () => {
@@ -13,11 +13,11 @@ const Page = () => {
     <>
         <Hero />
         <Dashboards />
-        {/* <Marketing /> */}
-        {/* <Campaign /> */}
+        <Marketing />
+        <Campaign />
         <Sales />
         <Privacy />
-        <Swiper />
+        <TestimonialSwiper />
         <Scale />
     </>
   )
