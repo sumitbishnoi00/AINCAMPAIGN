@@ -26,7 +26,7 @@ const Scale = () => {
             width={1042}
             height={47.52}
             alt="scale"
-            className=" absolute top-[54%] right-[-3.5%]"
+            className=" absolute top-[54%] right-[-3.5%] max-2xl:hidden"
           />
         </div>
       </div>
